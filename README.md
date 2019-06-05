@@ -2,12 +2,11 @@
 
 Justine Lee, jul199@ucsd.edu
 
-(Your teammates' contact info, if appropriate)
+Victor Miranda, vmiranda@ucsd.edu
 
 ## Abstract Proposal
 
-We will be bringing back the project 4 for our final project where we generate a stylized image. Our goal is to create our own camera similar to a polaroid using a raspberry pi and a picamera and send the picture taken through a neural network. Our desired creative goal is to integrate the software from machine learning with hardware. This allows the users to visualize the world in another style. We will be presenting our work in the final project presentation through example photos we have taken with the actual camera as well as the interface of the camera. 
-
+We will be bringing back the project 4 for our final project where we generate a stylized image. Our goal is to create our own camera similar to a polaroid using a raspberry pi and a picamera and send the picture taken through a neural network. Our desired creative goal is to integrate the software from machine learning with hardware. This allows the users to visualize the world in another style. We will be presenting our work in the final project presentation through example photos we have taken with the actual camera as well as the interface of the camera.
 
 ## Project Report
 
