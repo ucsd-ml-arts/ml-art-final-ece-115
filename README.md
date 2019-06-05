@@ -1,12 +1,13 @@
 # Final Project
 
-Your Name, yourcontact@ucsd.edu
+Justine Lee, jul199@ucsd.edu
 
 (Your teammates' contact info, if appropriate)
 
 ## Abstract Proposal
 
-FIRST STEP: Write up a description (in the form of an abstract) of what you will revisit for your final project. This should be one paragraph clearly describing your concept and approach. What are your desired creative goals? How are you expanding on something we covered in the class? How will you present your work next Wednesday in the final project presentations? 
+We will be bringing back the project 4 for our final project where we generate a stylized image. Our goal is to create our own camera similar to a polaroid using a raspberry pi and a picamera and send the picture taken through a neural network. Our desired creative goal is to integrate the software from machine learning with hardware. This allows the users to visualize the world in another style. We will be presenting our work in the final project presentation through example photos we have taken with the actual camera as well as the interface of the camera. 
+
 
 ## Project Report
 
