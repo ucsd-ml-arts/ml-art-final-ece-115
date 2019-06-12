@@ -3,6 +3,8 @@ import argparse
 from sklearn.cluster import KMeans
 import numpy as np
 import matplotlib.pyplot as plt
+import PIL
+from PIL import Image
 
 #argument parser
 parser = argparse.ArgumentParser(
@@ -15,9 +17,16 @@ args = parser.parse_args()
 
 #k-means segmentation function
 def kmeans_segment(content,style,clusters=5):
+    #resize content image
+    basewidth = 300
+    img = Image.open('./samples_content/'+content+'.jpg')
+    wpercent = (basewidth / float(img.size[0]))
+    hsize = int((float(img.size[1]) * float(wpercent)))
+    img = img.resize((basewidth, hsize), PIL.Image.ANTIALIAS)
+    img.save('./samples_content/'+content+'_resized.jpg')
     #read normalized images
     print('Reading images...')
-    pic1 = plt.imread('./samples_content/'+content+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
+    pic1 = plt.imread('./samples_content/'+content+'_resized.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
     pic2 = plt.imread('./samples_style/'+style+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
     #vectorize images
     print('Vectorizing images...')
@@ -32,7 +41,7 @@ def kmeans_segment(content,style,clusters=5):
     #save clustered pictures (consistent masking)
     print('Saving clustered images...')
     cluster_pic1 = pic2show1.reshape(pic1.shape[0], pic1.shape[1], pic1.shape[2])
-    plt.imsave('./samples_content/'+content+'_sem.png',cluster_pic1)
+    plt.imsave('./samples_content/'+content+'_resized_sem.png',cluster_pic1)
     cluster_pic2 = pic2show2.reshape(pic2.shape[0], pic2.shape[1], pic2.shape[2])
     plt.imsave('./samples_style/'+style+'_sem.png',cluster_pic2)
     print('Done')
