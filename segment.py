@@ -17,8 +17,8 @@ args = parser.parse_args()
 def kmeans_segment(content,style,clusters=5):
     #read normalized images
     print('Reading images...')
-    pic1 = plt.imread('./samples_kmeans/'+content+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
-    pic2 = plt.imread('./samples_kmeans/'+style+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
+    pic1 = plt.imread('./samples_content/'+content+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
+    pic2 = plt.imread('./samples_style/'+style+'.jpg')/255  # dividing by 255 to bring the pixel values between 0 and 1
     #vectorize images
     print('Vectorizing images...')
     pic1_n = pic1.reshape(pic1.shape[0]*pic1.shape[1], pic1.shape[2])
@@ -32,9 +32,9 @@ def kmeans_segment(content,style,clusters=5):
     #save clustered pictures (consistent masking)
     print('Saving clustered images...')
     cluster_pic1 = pic2show1.reshape(pic1.shape[0], pic1.shape[1], pic1.shape[2])
-    plt.imsave('./samples_kmeans/'+content+'_sem.png',cluster_pic1)
+    plt.imsave('./samples_content/'+content+'_sem.png',cluster_pic1)
     cluster_pic2 = pic2show2.reshape(pic2.shape[0], pic2.shape[1], pic2.shape[2])
-    plt.imsave('./samples_kmeans/'+style+'_sem.png',cluster_pic2)
+    plt.imsave('./samples_style/'+style+'_sem.png',cluster_pic2)
     print('Done')
 
 #valid argument checker
