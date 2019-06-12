@@ -18,7 +18,7 @@ args = parser.parse_args()
 #k-means segmentation function
 def kmeans_segment(content,style,clusters=5):
     #resize content image
-    basewidth = 300
+    basewidth = 400
     img = Image.open('./samples_content/'+content+'.jpg')
     wpercent = (basewidth / float(img.size[0]))
     hsize = int((float(img.size[1]) * float(wpercent)))
