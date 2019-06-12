@@ -27,7 +27,7 @@ Our final project report can be found here: [Final Project Report](https://githu
 You can use the [`segment.py`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/blob/master/segment.py) script to generate segmentation maskings for desired images.
 - In order to generate segmentation maskings for desired images, execute `python segment.py --content <content_image_name> ---style <style_image_name> --clusters <number_of_clusters>`. (note: do not include the `.jpg` extension for image names)
 - The `--clusters` parameter specifies how many k-means clusters you would like to make, which corresponds to the number of unique colors in a segmentaion masking image.
-- Open/Run the (`segment_visuals.ipynb`)[https://github.com/ucsd-ml-arts/ml-art-final-ece-115/blob/master/segment_visuals.ipynb] notebook to see how the k-means algorithm creates clusters to generate segmentation masking images.
+- Open/Run the [`segment_visuals.ipynb`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/blob/master/segment_visuals.ipynb) notebook to see how the k-means algorithm creates clusters to generate segmentation masking images.
 
 You can use the [`doodle.py`](https://github.com/ucsd-ml-arts/generative-visual-group-ece-115/blob/master/doodle.py) script to generate visuals using a previously trained model (ex. VGG-19).
 - In order to generate visuals, execute `python doodle.py --style samples_style/<style_image_name>.jpg --output samples_content/<output_image_name>_resized.png --device=cpu --iterations=40`.
