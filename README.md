@@ -40,9 +40,10 @@ Any implementation details or notes we need to repeat your work.
 - Does this code require other pip packages, software, etc?
 - Does it run on some other (non-datahub) platform? (CoLab, etc.)
 
-## Reference
+## References
 
-References to any papers, techniques, repositories you used:
-- Papers
-- Repositories
-- Blog posts
+- GitHub user 'alexjc' - [Neural Doodle](https://github.com/alexjc/neural-doodle)
+- GitHub user 'danmacnish' - [Cartoonify](https://github.com/danmacnish/cartoonify)
+- Raspberry Pi Projects - [The All-Seeing Pi](https://projects.raspberrypi.org/en/projects/the-all-seeing-pi/8)
+- Pulkit Sharma - [Introduction to Image Segmentation Techniques](https://www.analyticsvidhya.com/blog/2019/04/introduction-image-segmentation-techniques-python/)
+- Karen Simonyan, Andrew Zisserman - [VGG-19 pre-trained model](https://arxiv.org/abs/1409.1556)

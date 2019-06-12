@@ -1,6 +1,7 @@
 numpy
 matplotlib
 scikit-learn
+Pillow
 colorama
 pillow>=3.2.0
 Theano>=0.8.1

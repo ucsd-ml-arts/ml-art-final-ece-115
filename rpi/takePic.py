@@ -11,7 +11,7 @@ import sys
 def capture():
     print('Captured')
     timestamp = datetime.now().isoformat()
-    img = '../samples_kmeans/%s.jpg' % timestamp
+    img = '../samples_content/%s.jpg' % timestamp
     camera.capture(img)
     camera.stop_preview()
     subprocess.Popen(['xdg-open',img])
