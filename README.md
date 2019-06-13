@@ -35,7 +35,9 @@ You can use the [`doodle.py`](https://github.com/ucsd-ml-arts/generative-visual-
 
 ## Results
 
-The final results are saved as image files in the [`results`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/tree/master/results) directory. A collage of final results for this project can be found here: [Final Collage](https://docs.google.com/document/d/1jnNvAf6oiMX2bmNCnMKpvXF0K6zn5Qc-QuiKX2Uw_Ws/edit?usp=sharing). Collages of final results from project 4 can also be found in the [`collages`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/tree/master/collages) directory.
+- The final results are saved as image files in the [`results`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/tree/master/results) directory.
+- A collage of final results for this project can be found here: [Final Collage](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/blob/master/results/ECE%20188%20Final%20Collage.pdf).
+- Collages of final results from project 4 can also be found in the [`collages`](https://github.com/ucsd-ml-arts/ml-art-final-ece-115/tree/master/collages) directory.
 - Some of our results came out clear while others were difficult to distinguish. You really have to compare images side by side to find any similarities within pictures and too see if Neural Doodle was doing its job.
 
 ## Technical Notes
